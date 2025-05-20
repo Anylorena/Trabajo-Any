@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tutorial ECMAScript</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Guía de ECMAScript</h1>
+    <p>Aprende todo sobre ECMAScript, la base de JavaScript moderno</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es ECMAScript?</h2>
+      <p>
+        ECMAScript es una especificación creada por Ecma International que define cómo debe funcionar el lenguaje JavaScript. Es la base estándar que siguen los navegadores para asegurar compatibilidad entre ellos.
+      </p>
+    </section>
+
+    <section>
+      <h2>Versiones de ECMAScript</h2>
+      <ul>
+        <li><strong>ES1 (1997):</strong> Primera versión.</li>
+        <li><strong>ES3 (1999):</strong> Añade expresiones regulares.</li>
+        <li><strong>ES5 (2009):</strong> Strict mode, JSON.parse/stringify, funciones array como forEach, map.</li>
+        <li><strong>ES6 / ES2015:</strong> let, const, arrow functions, clases, template literals.</li>
+        <li><strong>ES7 / ES2016:</strong> Includes, exponentiation operator.</li>
+        <li><strong>ES8 / ES2017:</strong> Async/await, Object.entries.</li>
+        <li><strong>ES9 / ES2018:</strong> Rest/spread en objetos, Promise.finally.</li>
+        <li><strong>ES10 / ES2019:</strong> flat(), trimStart(), trimEnd().</li>
+        <li><strong>ES11 / ES2020:</strong> Nullish Coalescing, Optional Chaining.</li>
+        <li><strong>ES12 / ES2021:</strong> replaceAll, Logical Assignment Operators.</li>
+        <li><strong>ES13 / ES2022:</strong> Top-level await, at().</li>
+        <li><strong>ES14 / ES2023:</strong> Array findLast(), Hashbang grammar.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>¿Cómo usar ECMAScript?</h2>
+      <p>Solo necesitas un navegador moderno o un entorno como Node.js. Asegúrate de que tu entorno soporte la versión que deseas usar.</p>
+    </section>
+
+    <section>
+      <h2>Diferencias entre versiones y ejemplos</h2>
+      <h3>ES6: Arrow Functions</h3>
+      <pre><code>const suma = (a, b) => a + b;</code></pre>
+
+      <h3>ES7: includes()</h3>
+      <pre><code>const nums = [1, 2, 3]; nums.includes(2); // true</code></pre>
+
+      <h3>ES8: async/await</h3>
+      <pre><code>
+async function obtenerDatos() {
+  const res = await fetch("https://api.example.com");
+  const data = await res.json();
+  console.log(data);
+}
+      </code></pre>
+
+      <h3>ES9: spread en objetos</h3>
+      <pre><code>
+const obj1 = { a: 1 };
+const obj2 = { ...obj1, b: 2 };
+      </code></pre>
+
+      <h3>ES10: Array.flat()</h3>
+      <pre><code>
+const arr = [1, [2, [3]]];
+console.log(arr.flat(2)); // [1, 2, 3]
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto educativo sobre ECMAScript. Hecho por Anylorena Torres Avila.</p>
+  </footer>
+</body>
+</html>
